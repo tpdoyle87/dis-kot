@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Configuration
 import org.springframework.web.reactive.function.client.WebClient
 
 @Configuration
-class WebClientConfig {
+open class WebClientConfig {
 
     @Bean
-    fun WebClient(): WebClient {
+    open fun WebClient(): WebClient {
         return WebClient.builder()
                 .build()
     }
